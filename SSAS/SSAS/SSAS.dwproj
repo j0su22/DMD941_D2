@@ -6,10 +6,50 @@
     <Name>SSAS.database</Name>
     <FullPath>SSAS.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Movilidad.dim</Name>
+      <FullPath>Movilidad.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Movilidad COVID.ds</Name>
+      <FullPath>Movilidad COVID.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Movilidad COVID.dsv</Name>
+      <FullPath>Movilidad COVID.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Movilidad COVID</Id>
+            <Name>Movilidad COVID</Name>
+            <Value xsi:type="xsd:string">Data Source=J0SU_DESKTOP;Initial Catalog=MovilidadCOVID;Integrated Security=True;Encrypt=False</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Movilidad COVID</Id>
+            <Name>Movilidad COVID</Name>
+            <Value xsi:type="xsd:string">Microsoft.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Movilidad COVID</Id>
+            <Name>Movilidad COVID</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>

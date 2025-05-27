@@ -1,0 +1,81 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e040e8e2-8904-491b-84f4-a9721d23089f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Movilidad COVID</ID>
+  <Name>Movilidad COVID</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Movilidad COVID</DataSourceID>
+  <Schema>
+    <xs:schema id="Movilidad_x0020_COVID" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Movilidad_x0020_COVID" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cda815fc-f285-4ca3-bd19-78fb0e4d1165">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Movilidad" msprop:DbTableName="Movilidad" msprop:FriendlyName="Movilidad" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9c6178f7-c349-4018-ad6b-7ab570028ee3">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fecha" msprop:FriendlyName="Fecha" msprop:DbColumnName="Fecha" msprop:design-time-name="e05ab6a3-10e2-46a7-ae82-24a4f64ebdde" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Pais" msprop:FriendlyName="Pais" msprop:DbColumnName="Pais" msprop:design-time-name="3ad4e2c8-424a-4740-b1ee-111f700222bc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Departamento" msprop:FriendlyName="Departamento" msprop:DbColumnName="Departamento" msprop:design-time-name="a0f1ea71-555c-4cb9-a858-022ad02620f5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ComercioRecreacion" msprop:FriendlyName="ComercioRecreacion" msprop:DbColumnName="ComercioRecreacion" msprop:design-time-name="957a90c9-f225-47aa-9702-69463208f518" type="xs:double" minOccurs="0" />
+                  <xs:element name="SupermercadosFarmacias" msprop:FriendlyName="SupermercadosFarmacias" msprop:DbColumnName="SupermercadosFarmacias" msprop:design-time-name="5a23aeb4-8cbb-4df6-9131-784c377922e9" type="xs:double" minOccurs="0" />
+                  <xs:element name="Parques" msprop:FriendlyName="Parques" msprop:DbColumnName="Parques" msprop:design-time-name="827c3268-6316-48cc-9bd1-a55dd928796a" type="xs:double" minOccurs="0" />
+                  <xs:element name="Transporte" msprop:FriendlyName="Transporte" msprop:DbColumnName="Transporte" msprop:design-time-name="4b21f299-2575-47da-8f8d-838dbfadd8ec" type="xs:double" minOccurs="0" />
+                  <xs:element name="Trabajo" msprop:FriendlyName="Trabajo" msprop:DbColumnName="Trabajo" msprop:design-time-name="b8b0f5c7-7e2f-4664-95c7-46787e92ff35" type="xs:double" minOccurs="0" />
+                  <xs:element name="Residencial" msprop:FriendlyName="Residencial" msprop:DbColumnName="Residencial" msprop:design-time-name="dc9877be-74fb-4a36-a097-146f846ac4ef" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Movilidad_x0020_COVID xmlns="" />
+  </Schema>
+</DataSourceView>
