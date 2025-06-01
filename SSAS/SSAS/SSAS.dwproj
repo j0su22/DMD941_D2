@@ -6,6 +6,18 @@
     <Name>SSAS.database</Name>
     <FullPath>SSAS.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Movilidad COVID.cube</Name>
+      <FullPath>Movilidad COVID.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Movilidad COVID.partitions</Name>
+          <FullPath>Movilidad COVID.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>DimTiempo.dim</Name>
@@ -14,6 +26,10 @@
     <ProjectItem>
       <Name>DimDepartamento.dim</Name>
       <FullPath>DimDepartamento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Movilidad Sv 2020.dim</Name>
+      <FullPath>Movilidad Sv 2020.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
