@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="438b698a-2641-4206-a8d1-1ed6fe866e84" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Movilidad</ID>
-  <Name>Movilidad</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b8c7f551-4bdf-4876-9cf9-3de5962a6943" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimDepartamento</ID>
+  <Name>DimDepartamento</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -42,26 +42,29 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="69e3cc62-fa79-4432-8703-f27019862cbd">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6cb10e37-9cbc-4bf1-9a06-7ec4b336d9fd">
     <DataSourceViewID>Movilidad COVID</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="d7cfd95a-b1b8-480a-900f-7ad2faed6d75">
+  <Type>Geography</Type>
+  <ErrorConfiguration dwd:design-time-name="4db3f8b8-fdba-448d-8ddc-30e3e42bed5e">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="3bf8f0f4-e478-4731-ae0a-d4fc199881e4">
-      <ID>Fecha</ID>
-      <Name>Fecha</Name>
+    <Attribute dwd:design-time-name="1917876c-00aa-4624-8c24-ff55e117b9a6">
+      <ID>Departamento</ID>
+      <Name>Departamento</Name>
+      <Type>StateOrProvince</Type>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e61fd233-2a0c-4f97-9656-3032a3672ec5">
-          <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="85cb1e25-313e-43ee-a546-cab770fa1b25">
-            <TableID>dbo_Movilidad</TableID>
-            <ColumnID>Fecha</ColumnID>
+        <KeyColumn dwd:design-time-name="44360b69-c1f5-4af9-9746-be00c272dcc3">
+          <DataType>WChar</DataType>
+          <DataSize>300</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59adc24b-481b-4e82-a729-e6a8472b80e2">
+            <TableID>dbo_movilidad_sv_2020</TableID>
+            <ColumnID>departamento</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

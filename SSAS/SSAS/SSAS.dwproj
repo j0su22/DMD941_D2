@@ -8,8 +8,12 @@
   </Database>
   <Dimensions>
     <ProjectItem>
-      <Name>Movilidad.dim</Name>
-      <FullPath>Movilidad.dim</FullPath>
+      <Name>DimTiempo.dim</Name>
+      <FullPath>DimTiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimDepartamento.dim</Name>
+      <FullPath>DimDepartamento.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

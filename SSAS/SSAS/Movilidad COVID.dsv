@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e040e8e2-8904-491b-84f4-a9721d23089f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5fc7a8b1-96d3-4f50-bbbb-67749940bf06" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Movilidad COVID</ID>
   <Name>Movilidad COVID</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -26,11 +26,36 @@
         <Layouts xmlns="">
           <Diagram>
             <Name>_ALL_TABLES_</Name>
-            <DiagramLayout />
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10439" scrolltop="-8810" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23918" y="22463" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="movilidad_sv_2020" left="-4002" top="-2910" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ea120000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_movilidad_sv_2020" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>0</DiagramViewPortLeft>
-            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramViewPortLeft>-10439</DiagramViewPortLeft>
+            <DiagramViewPortTop>-8810</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -42,38 +67,36 @@
   <DataSourceID>Movilidad COVID</DataSourceID>
   <Schema>
     <xs:schema id="Movilidad_x0020_COVID" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="Movilidad_x0020_COVID" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cda815fc-f285-4ca3-bd19-78fb0e4d1165">
+      <xs:element name="Movilidad_x0020_COVID" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="48339e85-f603-4639-8e99-0f56689a58b1">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_Movilidad" msprop:DbTableName="Movilidad" msprop:FriendlyName="Movilidad" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9c6178f7-c349-4018-ad6b-7ab570028ee3">
+            <xs:element name="dbo_movilidad_sv_2020" msprop:design-time-name="241f38fc-267c-4d54-b318-350dd5295f31" msprop:FriendlyName="movilidad_sv_2020" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="movilidad_sv_2020">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Fecha" msprop:FriendlyName="Fecha" msprop:DbColumnName="Fecha" msprop:design-time-name="e05ab6a3-10e2-46a7-ae82-24a4f64ebdde" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="Pais" msprop:FriendlyName="Pais" msprop:DbColumnName="Pais" msprop:design-time-name="3ad4e2c8-424a-4740-b1ee-111f700222bc" minOccurs="0">
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="6be169a7-d212-43b7-956b-ed79048a70c2" type="xs:int" />
+                  <xs:element name="fecha" msprop:FriendlyName="fecha" msprop:DbColumnName="fecha" msprop:design-time-name="53595c6c-34d1-41d0-a488-82ec2affa789" type="xs:dateTime" />
+                  <xs:element name="departamento" msprop:FriendlyName="departamento" msprop:DbColumnName="departamento" msprop:design-time-name="02a4f5bc-2ecd-477c-8d54-54838b18e182" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
-                        <xs:maxLength value="100" />
+                        <xs:maxLength value="300" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="Departamento" msprop:FriendlyName="Departamento" msprop:DbColumnName="Departamento" msprop:design-time-name="a0f1ea71-555c-4cb9-a858-022ad02620f5" minOccurs="0">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="100" />
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                  <xs:element name="ComercioRecreacion" msprop:FriendlyName="ComercioRecreacion" msprop:DbColumnName="ComercioRecreacion" msprop:design-time-name="957a90c9-f225-47aa-9702-69463208f518" type="xs:double" minOccurs="0" />
-                  <xs:element name="SupermercadosFarmacias" msprop:FriendlyName="SupermercadosFarmacias" msprop:DbColumnName="SupermercadosFarmacias" msprop:design-time-name="5a23aeb4-8cbb-4df6-9131-784c377922e9" type="xs:double" minOccurs="0" />
-                  <xs:element name="Parques" msprop:FriendlyName="Parques" msprop:DbColumnName="Parques" msprop:design-time-name="827c3268-6316-48cc-9bd1-a55dd928796a" type="xs:double" minOccurs="0" />
-                  <xs:element name="Transporte" msprop:FriendlyName="Transporte" msprop:DbColumnName="Transporte" msprop:design-time-name="4b21f299-2575-47da-8f8d-838dbfadd8ec" type="xs:double" minOccurs="0" />
-                  <xs:element name="Trabajo" msprop:FriendlyName="Trabajo" msprop:DbColumnName="Trabajo" msprop:design-time-name="b8b0f5c7-7e2f-4664-95c7-46787e92ff35" type="xs:double" minOccurs="0" />
-                  <xs:element name="Residencial" msprop:FriendlyName="Residencial" msprop:DbColumnName="Residencial" msprop:design-time-name="dc9877be-74fb-4a36-a097-146f846ac4ef" type="xs:double" minOccurs="0" />
+                  <xs:element name="comercio" msprop:FriendlyName="comercio" msprop:DbColumnName="comercio" msprop:design-time-name="674662ed-f791-4227-a0de-935bc9b9c6de" type="xs:double" minOccurs="0" />
+                  <xs:element name="supermercado" msprop:FriendlyName="supermercado" msprop:DbColumnName="supermercado" msprop:design-time-name="4176fa00-cae9-47fb-910d-7af4066de608" type="xs:double" minOccurs="0" />
+                  <xs:element name="parques" msprop:FriendlyName="parques" msprop:DbColumnName="parques" msprop:design-time-name="4a3e8577-a18b-4925-90e2-a26775e2fdcf" type="xs:double" minOccurs="0" />
+                  <xs:element name="transporte" msprop:FriendlyName="transporte" msprop:DbColumnName="transporte" msprop:design-time-name="c0bcdfd6-90dd-4a0d-b82d-a1c153450ef4" type="xs:double" minOccurs="0" />
+                  <xs:element name="trabajo" msprop:FriendlyName="trabajo" msprop:DbColumnName="trabajo" msprop:design-time-name="12bd4357-c210-48e2-ad38-93950405fcb4" type="xs:double" minOccurs="0" />
+                  <xs:element name="residencia" msprop:FriendlyName="residencia" msprop:DbColumnName="residencia" msprop:design-time-name="2a22e2ca-58e2-4b84-9810-81b3c27c9f60" type="xs:double" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
           </xs:choice>
         </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_movilidad_sv_2020" />
+          <xs:field xpath="id" />
+        </xs:unique>
       </xs:element>
     </xs:schema>
     <Movilidad_x0020_COVID xmlns="" />
