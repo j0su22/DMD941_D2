@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="5/26/2025 10:45:25 PM"
+  DTS:CreationDate="5/31/2025 9:37:48 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="J0SU_DESKTOP"
   DTS:CreatorName="J0SU_DESKTOP\josue"
-  DTS:DTSID="{418FBD7F-F624-4437-B1E6-9F9AF1017B73}"
+  DTS:DTSID="{24001F65-AD7D-4AD6-9EB7-17A2BFE5259E}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{AFBA3D7E-9B55-4711-B821-323F8B38FC00}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{45186889-4881-4B1C-A6DA-1029CBD38F0B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DataFileCSV]"
+      DTS:refId="Package.ConnectionManagers[CSV Mobilidad SV 2020]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{80E1488D-2A94-42EF-A4A2-EA24E205D2AD}"
-      DTS:ObjectName="DataFileCSV">
+      DTS:DTSID="{66497196-23BA-4DE8-8A59-CA5BDF1AB293}"
+      DTS:ObjectName="CSV Mobilidad SV 2020">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,234 +30,43 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\josue\Develop\DMD941_D2\Datos\Global_Mobility_Report.csv">
+          DTS:ConnectionString="C:\Users\josue\Develop\DMD941_D2\Datos\2020_SV_Region_Mobility_Report.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="country_region_code"
-              DTS:DTSID="{B32B5EF5-C041-4DE2-B9D3-E41FD8C273D8}"
+              DTS:DTSID="{8229310D-73D4-4FB8-8713-2CF56256F18F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="country_region"
-              DTS:DTSID="{A22359A3-245B-4E94-A5C2-3E3786EC9F13}"
+              DTS:DTSID="{37B4D1C0-4D65-422E-8CBC-9244D303A943}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="sub_region_1"
-              DTS:DTSID="{408A811F-7F27-46E0-8E4E-80D576FFDB9D}"
+              DTS:DTSID="{63A2BF7F-01E7-4B4C-AED2-F51D0E40EC1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="sub_region_2"
-              DTS:DTSID="{EF454C85-88FD-4CCB-92DF-774350BE67EE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="metro_area"
-              DTS:DTSID="{D2ECDBD2-0FA6-45DD-9F21-67D90D698C49}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="iso_3166_2_code"
-              DTS:DTSID="{29D1208B-046D-4A54-9A9B-7D224E471999}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="census_fips_code"
-              DTS:DTSID="{23FD2C01-F7D5-40F8-A7BD-9BB03B134295}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="place_id"
-              DTS:DTSID="{25D3C952-4411-4932-9435-4CB97E4F3BA3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{1A96DDA9-B9CD-48DC-B42C-513AECEC79C7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
-              DTS:DTSID="{DB704F83-17C2-4B11-9F76-C4E424952ECC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
-              DTS:DTSID="{F8993230-74EB-4993-BC19-78F0E5EBD644}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="parks_percent_change_from_baseline"
-              DTS:DTSID="{DCC6F316-5CFF-4B33-9512-26995820AA87}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="transit_stations_percent_change_from_baseline"
-              DTS:DTSID="{96414394-D4D1-4A65-BA60-0A3B51739F1C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="workplaces_percent_change_from_baseline"
-              DTS:DTSID="{89095334-FAF3-49DB-800E-B1BD7B1ED01E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="residential_percent_change_from_baseline"
-              DTS:DTSID="{E2039D8F-B037-4A6C-B9C7-7DAA31C3B92A}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{CC3062DF-FC0D-402D-8941-125BFFD5B8D9}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\josue\Develop\DMD941_D2\Datos\Global_Mobility_Report.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_region_code"
-              DTS:DTSID="{DE12F205-9D3D-4F72-A52A-A43F66FDA577}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_region"
-              DTS:DTSID="{E9D662A1-2562-41CB-912C-DFCC2D435D88}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub_region_1"
-              DTS:DTSID="{02262A0C-F35B-43D9-9031-8F62353ADE02}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub_region_2"
-              DTS:DTSID="{8485CDC7-1073-488D-B7EC-8FA74084E7FE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="metro_area"
-              DTS:DTSID="{44CF88CA-B49F-4CF7-9E18-B2B581DB4088}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="iso_3166_2_code"
-              DTS:DTSID="{56B9ED0F-3139-4050-B40F-8476825B64DC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="census_fips_code"
-              DTS:DTSID="{1D7A1184-CC52-4A4B-A82D-3A6F649B9B34}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="place_id"
-              DTS:DTSID="{B0C0B2F1-4A40-48E3-BBDB-813543B3CF5D}"
+              DTS:DTSID="{C76DAA38-F8D9-4D9D-A41C-9394276B5E5C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -265,89 +74,95 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{40A1ED67-32AA-44CC-BCF3-4EB4BF6283D0}"
+              DTS:DTSID="{5D72CDEA-CDD7-4BA1-8E63-5FF9CD285A05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
-              DTS:DTSID="{65750460-B525-4E29-ACBE-82893342C735}"
+              DTS:DTSID="{F17A2BE7-8877-44E0-9F31-0D72ED56EFB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
-              DTS:DTSID="{536AEC32-E071-4D76-9424-E5247B6AD7D3}"
+              DTS:DTSID="{568E892B-D1B8-46A3-B40D-D3377B6EC464}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="parks_percent_change_from_baseline"
-              DTS:DTSID="{1FD1745C-0F7F-4F0B-9E5E-E3932E803E05}"
+              DTS:DTSID="{5BFC9AB5-EE44-4289-85CE-499CBCA4858F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="transit_stations_percent_change_from_baseline"
-              DTS:DTSID="{69369E41-886E-4DD9-A543-8AE8AE873D9F}"
+              DTS:DTSID="{3AF81D5E-85ED-431D-B7B0-7FAE78F15EA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="workplaces_percent_change_from_baseline"
-              DTS:DTSID="{E5621555-4DC6-4622-A1A8-C1A1E6AB25D2}"
+              DTS:DTSID="{058FC041-7AB6-4DE8-8009-391EB5123960}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="residential_percent_change_from_baseline"
-              DTS:DTSID="{172B7A4C-CED4-42EA-92FA-2C47118612FC}"
+              DTS:DTSID="{5E14DC45-5B7F-4834-8680-87526307616D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[MovilidadCOVID]"
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{39FD641D-8DAC-4828-877B-773CDA6E8590}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\josue\Develop\DMD941_D2\Errors\errors.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[J0SU_DESKTOP.MovilidadCOVID]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{94CC223D-4FAF-42E0-B0D6-B360DF4992CB}"
-      DTS:ObjectName="MovilidadCOVID">
+      DTS:DTSID="{45F717CC-E6DB-47A2-8CC3-96DEA52EC670}"
+      DTS:ObjectName="J0SU_DESKTOP.MovilidadCOVID">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=;Initial Catalog=MovilidadCOVID;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=J0SU_DESKTOP;Initial Catalog=MovilidadCOVID;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Carga CSV to DB"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{5AF6D8BA-07CD-4559-B14F-2E1648142863}"
+      DTS:DTSID="{C9FA6F32-DDE5-4E84-B17B-D6F1914C1460}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Carga CSV to DB"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -355,7 +170,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Derived Column"
+              refId="Package\Carga CSV to DB\Derived Column"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
@@ -363,217 +178,233 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[retail_and_recreation_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="retail_and_recreation_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="grocery_and_pharmacy_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[parks_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[parks_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="parks_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[transit_stations_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[transit_stations_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="transit_stations_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[workplaces_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[workplaces_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="workplaces_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[residential_percent_change_from_baseline]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[residential_percent_change_from_baseline]"
+                      cachedDataType="r8"
                       cachedName="residential_percent_change_from_baseline"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]" />
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ComercioRecreacion]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[comercio]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ComercioRecreacion]"
-                      name="ComercioRecreacion"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[comercio]"
+                      name="comercio"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(retail_and_recreation_percent_change_from_baseline) || TRIM(retail_and_recreation_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)retail_and_recreation_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(retail_and_recreation_percent_change_from_baseline) ? -999.0 : (DT_R4)retail_and_recreation_percent_change_from_baseline</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SupermercadosFarmacias]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[supermercado]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SupermercadosFarmacias]"
-                      name="SupermercadosFarmacias"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[supermercado]"
+                      name="supermercado"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(grocery_and_pharmacy_percent_change_from_baseline) || TRIM(grocery_and_pharmacy_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)grocery_and_pharmacy_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(grocery_and_pharmacy_percent_change_from_baseline) ? -999.0 : (DT_R4)grocery_and_pharmacy_percent_change_from_baseline</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Transporte]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[parques]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Transporte]"
-                      name="Transporte"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[parques]"
+                      name="parques"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(transit_stations_percent_change_from_baseline) || TRIM(transit_stations_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)transit_stations_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(parks_percent_change_from_baseline) ? -999.0 : (DT_R4)parks_percent_change_from_baseline</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Trabajo]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[transporte]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Trabajo]"
-                      name="Trabajo"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[transporte]"
+                      name="transporte"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(workplaces_percent_change_from_baseline) || TRIM(workplaces_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)workplaces_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(transit_stations_percent_change_from_baseline) ? -999.0 : (DT_R4)transit_stations_percent_change_from_baseline</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Residencial]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[trabajo]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Residencial]"
-                      name="Residencial"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[trabajo]"
+                      name="trabajo"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(residential_percent_change_from_baseline) || TRIM(residential_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)residential_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(workplaces_percent_change_from_baseline) ? -999.0 : (DT_R4)workplaces_percent_change_from_baseline</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Parques]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[residencia]"
                       dataType="r4"
                       errorOrTruncationOperation="Computation"
-                      errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Parques]"
-                      name="Parques"
-                      truncationRowDisposition="IgnoreFailure">
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[residencia]"
+                      name="residencia"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[ISNULL](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]}) || [TRIM](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]}) == "" ? -999.0 : (DT_R4)#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]}</property>
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]}) ? -999.0 : (DT_R4)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(parks_percent_change_from_baseline) || TRIM(parks_percent_change_from_baseline) == "" ? -999.0 : (DT_R4)parks_percent_change_from_baseline</property>
+                          name="FriendlyExpression">ISNULL(residential_percent_change_from_baseline) ? -999.0 : (DT_R4)residential_percent_change_from_baseline</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[fecha]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[fecha]"
+                      name="fecha"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ISNULL](#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]}) ? "" : (DT_WSTR,10)#{Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(date) ? "" : (DT_WSTR,10)date</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -582,7 +413,226 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Carga CSV to DB\Excel Destination"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Excel Destination"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga CSV to DB\Excel Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[country_region_code]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country_region_code"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[country_region_code]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region_code]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[country_region]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country_region"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[country_region]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[sub_region_1]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="sub_region_1"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[sub_region_1]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[sub_region_2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="sub_region_2"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[sub_region_2]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_2]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="retail_and_recreation_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="grocery_and_pharmacy_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[parks_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="parks_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[transit_stations_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="transit_stations_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[workplaces_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="workplaces_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].Columns[residential_percent_change_from_baseline]"
+                      cachedDataType="r8"
+                      cachedName="residential_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[country_region_code]"
+                      dataType="wstr"
+                      length="255"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[country_region]"
+                      dataType="wstr"
+                      length="255"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[sub_region_1]"
+                      dataType="wstr"
+                      length="255"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[sub_region_2]"
+                      dataType="wstr"
+                      length="255"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[date]"
+                      dataType="wstr"
+                      length="255"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="wstr"
+                      length="255"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga CSV to DB\Excel Destination.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga CSV to DB\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga CSV to DB\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga CSV to DB\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga CSV to DB\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -602,27 +652,26 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  refId="Package\Carga CSV to DB\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV Mobilidad SV 2020]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV Mobilidad SV 2020]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[country_region_code]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region_code]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region_code]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region_code]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[country_region_code]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region_code]"
                       name="country_region_code"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -635,16 +684,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]"
                       name="country_region"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -657,16 +705,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_1]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_1]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]"
                       name="sub_region_1"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -679,16 +726,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_2]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_2]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_2]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_2]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_2]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_2]"
                       name="sub_region_2"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -701,104 +747,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[metro_area]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[metro_area]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[metro_area]"
-                      name="metro_area"
-                      truncationRowDisposition="IgnoreFailure">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[iso_3166_2_code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[iso_3166_2_code]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[iso_3166_2_code]"
-                      name="iso_3166_2_code"
-                      truncationRowDisposition="IgnoreFailure">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[census_fips_code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[census_fips_code]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[census_fips_code]"
-                      name="census_fips_code"
-                      truncationRowDisposition="IgnoreFailure">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[place_id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[place_id]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[place_id]"
-                      name="place_id"
-                      truncationRowDisposition="IgnoreFailure">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
                       name="date"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -811,16 +767,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[retail_and_recreation_percent_change_from_baseline]"
                       name="retail_and_recreation_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -833,16 +787,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
                       name="grocery_and_pharmacy_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -855,16 +807,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parks_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[parks_percent_change_from_baseline]"
                       name="parks_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -877,16 +827,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transit_stations_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[transit_stations_percent_change_from_baseline]"
                       name="transit_stations_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -899,16 +847,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[workplaces_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[workplaces_percent_change_from_baseline]"
                       name="workplaces_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -921,16 +867,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[residential_percent_change_from_baseline]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[residential_percent_change_from_baseline]"
                       name="residential_percent_change_from_baseline"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -946,117 +890,77 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region_code]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region_code]"
+                      dataType="wstr"
                       length="50"
                       name="country_region_code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_region]"
+                      dataType="wstr"
                       length="50"
                       name="country_region" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_1]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_1]"
+                      dataType="wstr"
                       length="50"
                       name="sub_region_1" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_2]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_region_2]"
+                      dataType="wstr"
                       length="50"
                       name="sub_region_2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[metro_area]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="metro_area" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[iso_3166_2_code]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="iso_3166_2_code" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[census_fips_code]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="census_fips_code" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[place_id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="place_id" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
                       dataType="date"
                       name="date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="r8"
                       name="retail_and_recreation_percent_change_from_baseline" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="r8"
                       name="grocery_and_pharmacy_percent_change_from_baseline" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parks_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="r8"
                       name="parks_percent_change_from_baseline" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transit_stations_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="r8"
                       name="transit_stations_percent_change_from_baseline" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[workplaces_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="r8"
                       name="workplaces_percent_change_from_baseline" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[residential_percent_change_from_baseline]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="r8"
                       name="residential_percent_change_from_baseline" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1065,7 +969,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Carga CSV to DB\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1080,7 +984,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Movilidad]</property>
+                  name="OpenRowset">[dbo].[movilidad_sv_2020]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1122,144 +1026,132 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[MovilidadCOVID]"
-                  connectionManagerRefId="Package.ConnectionManagers[MovilidadCOVID]"
+                  refId="Package\Carga CSV to DB\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[J0SU_DESKTOP.MovilidadCOVID]"
+                  connectionManagerRefId="Package.ConnectionManagers[J0SU_DESKTOP.MovilidadCOVID]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="IgnoreFailure"
+                  errorRowDisposition="RedirectRow"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="date"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[comercio]"
+                      cachedDataType="r4"
+                      cachedName="comercio"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comercio]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[comercio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_region]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="country_region"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pais]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[country_region]" />
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[supermercado]"
+                      cachedDataType="r4"
+                      cachedName="supermercado"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[supermercado]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[supermercado]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sub_region_1]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[parques]"
+                      cachedDataType="r4"
+                      cachedName="parques"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[parques]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[parques]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[transporte]"
+                      cachedDataType="r4"
+                      cachedName="transporte"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transporte]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[transporte]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[trabajo]"
+                      cachedDataType="r4"
+                      cachedName="trabajo"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[trabajo]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[trabajo]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[residencia]"
+                      cachedDataType="r4"
+                      cachedName="residencia"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[residencia]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[residencia]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[fecha]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="fecha"
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      lineageId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output].Columns[fecha]" />
+                    <inputColumn
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sub_region_1]"
+                      cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="sub_region_1"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ComercioRecreacion]"
-                      cachedDataType="bool"
-                      cachedName="ComercioRecreacion"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ComercioRecreacion]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ComercioRecreacion]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SupermercadosFarmacias]"
-                      cachedDataType="bool"
-                      cachedName="SupermercadosFarmacias"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupermercadosFarmacias]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SupermercadosFarmacias]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Parques]"
-                      cachedDataType="bool"
-                      cachedName="Parques"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Parques]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Parques]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Transporte]"
-                      cachedDataType="bool"
-                      cachedName="Transporte"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transporte]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Transporte]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Trabajo]"
-                      cachedDataType="bool"
-                      cachedName="Trabajo"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Trabajo]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Trabajo]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Residencial]"
-                      cachedDataType="bool"
-                      cachedName="Residencial"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Residencial]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Residencial]" />
+                      externalMetadataColumnId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[departamento]"
+                      lineageId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output].Columns[sub_region_1]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
-                      dataType="dbDate"
-                      name="Fecha" />
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pais]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="Pais" />
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="wstr"
+                      length="10"
+                      name="fecha" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="Departamento" />
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[departamento]"
+                      dataType="wstr"
+                      length="300"
+                      name="departamento" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ComercioRecreacion]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comercio]"
                       dataType="r8"
-                      name="ComercioRecreacion" />
+                      name="comercio" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupermercadosFarmacias]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[supermercado]"
                       dataType="r8"
-                      name="SupermercadosFarmacias" />
+                      name="supermercado" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Parques]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[parques]"
                       dataType="r8"
-                      name="Parques" />
+                      name="parques" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transporte]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transporte]"
                       dataType="r8"
-                      name="Transporte" />
+                      name="transporte" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Trabajo]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[trabajo]"
                       dataType="r8"
-                      name="Trabajo" />
+                      name="trabajo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Residencial]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[residencia]"
                       dataType="r8"
-                      name="Residencial" />
+                      name="residencia" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1270,15 +1162,20 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Carga CSV to DB.Paths[Derived Column Output]"
+              endId="Package\Carga CSV to DB\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+              startId="Package\Carga CSV to DB\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              refId="Package\Carga CSV to DB.Paths[Flat File Source Output]"
+              endId="Package\Carga CSV to DB\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Carga CSV to DB\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Carga CSV to DB.Paths[OLE DB Destination Error Output]"
+              endId="Package\Carga CSV to DB\Excel Destination.Inputs[Excel Destination Input]"
+              name="OLE DB Destination Error Output"
+              startId="Package\Carga CSV to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1297,28 +1194,54 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task"
-          TopLeft="119,47" />
+          Size="158,42"
+          Id="Package\Carga CSV to DB"
+          TopLeft="112,86" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Carga CSV to DB">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="109,164" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="107,68" />
+          Id="Package\Carga CSV to DB\Flat File Source"
+          TopLeft="150,54" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Carga CSV to DB\Derived Column"
+          TopLeft="150,139" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="184.25,110">
+          Id="Package\Carga CSV to DB.Paths[Flat File Source Output]"
+          TopLeft="226.25,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Carga CSV to DB\OLE DB Destination"
+          TopLeft="143,235" />
+        <EdgeLayout
+          Id="Package\Carga CSV to DB.Paths[Derived Column Output]"
+          TopLeft="227.75,181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1339,36 +1262,51 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="102,249" />
+          Size="159,42"
+          Id="Package\Carga CSV to DB\Excel Destination"
+          TopLeft="569,229" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="186.75,206">
+          Id="Package\Carga CSV to DB.Paths[OLE DB Destination Error Output]"
+          TopLeft="314,253">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="255,0"
               Start="0,0"
-              End="0,35.5">
+              End="247.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="247.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="50.54109375,5,146.4178125,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Carga CSV to DB\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga CSV to DB\Excel Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
